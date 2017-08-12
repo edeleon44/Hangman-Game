@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout For Hangman</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>THIS IS FREAKING HANGMAN!</h1>
+			<p>Guess the word MF'er!</p>					
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Word to Guess</h3>
+			</div>
+
+			<div class="panel panel-body">
+				<h2 id="wordToGuess"> </h2>
+			</div>
+		</div> <!-- End div form p.panel-default ln.14 -->
+
+		<div class="panel panel-default">
+			<div class="panel panel-body">
+				Wrong Guessed: <span id="wrongGuessses"></span>
+			</div>
+		</div> <!-- End div for p.panel default ln.24 -->
+
+		<div class="panel panel-default">
+			<div class="panel panel-body">
+				Guesses Left: <span id="numGuesses">
+			</div>
+		</div> <!-- End div for p.panel default ln.34 -->
+
+		<div class="panel panel-default">
+			<div class="panel panel-body">
+				Win Counter: <span id="winCounter"></span>
+			</div>
+		</div> <!-- End div for p.panel def. ln.44 -->
+
+		<div class="panel panel-default">
+			<div class="panel panel-body">
+				Loss Counter: <span id="lossCounter"></span>
+			</div>
+		</div> <!-- End div for p.panel def. ln.54 -->
+
+
+	</div> <!--End div for container ln.8 -->
+
+	<!--Link to JS; at the bottom so it runs after html product -->
+	<script src="logic.js"></script>
+
+</body>
+</html>
