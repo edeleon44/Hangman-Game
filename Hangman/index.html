@@ -1,56 +1,66 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Layout For Hangman</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/reset.css">
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron">
-			<h1>THIS IS FREAKING HANGMAN!</h1>
-			<p>Guess the word MF'er!</p>					
+		<div class="jumbotron titleHeader">
+			<h1>Poker Hangman!</h1>
+			<p>Guess the word! Don't count your chips at the table!</p>					
 		</div>
 		
 		<div class="panel panel-default">
-			<div class="panel-heading">
+			<div class="panel-heading pokerHeader">
 				<h3 class="panel-title">Word to Guess</h3>
 			</div>
 
 			<div class="panel panel-body">
 				<h2 id="wordToGuess"> </h2>
 			</div>
-		</div> <!-- End div form p.panel-default ln.14 -->
-
+		</div> <!-- End div form p.panel-default ln.15 -->
+	
+	<div class="row">
+	<div class="col-md-3">
 		<div class="panel panel-default">
 			<div class="panel panel-body">
-				Wrong Guessed: <span id="wrongGuessses"></span>
+				Wrong Guessed: <span id="wrongGuesses"></span>
 			</div>
-		</div> <!-- End div for p.panel default ln.24 -->
+		</div> <!-- End div for p.panel default ln.26 -->
+	</div>
 
+	<div class="col-md-3">
 		<div class="panel panel-default">
 			<div class="panel panel-body">
-				Guesses Left: <span id="numGuesses">
+				Guesses Left: <span id="numGuesses"></span>
 			</div>
-		</div> <!-- End div for p.panel default ln.34 -->
+		</div> <!-- End div for p.panel default ln.35-->
+	</div>
 
+	<div class="col-md-3">
 		<div class="panel panel-default">
 			<div class="panel panel-body">
 				Win Counter: <span id="winCounter"></span>
 			</div>
-		</div> <!-- End div for p.panel def. ln.44 -->
+		</div> <!-- End div for p.panel def. ln.43 -->
+	</div>
 
+	<div class="col-md-3">
 		<div class="panel panel-default">
 			<div class="panel panel-body">
 				Loss Counter: <span id="lossCounter"></span>
 			</div>
-		</div> <!-- End div for p.panel def. ln.54 -->
+		</div> <!-- End div for p.panel def. ln.51 -->
+	</div>
+	
 
-
-	</div> <!--End div for container ln.8 -->
+		</div> <!--End div for container ln.25 -->
+	</div> <!-- End div for ln.9 -->
 
 	<!--Link to JS; at the bottom so it runs after html product -->
-	<script src="logic.js"></script>
+	<script src="assets/logic2.js"></script>
 
 </body>
 </html>
